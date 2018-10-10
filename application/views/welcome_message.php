@@ -1,89 +1,120 @@
-<?php
-defined('BASEPATH') OR exit('No direct script access allowed');
-?><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<title>Welcome to CodeIgniter</title>
 
-	<style type="text/css">
+  <head>
 
-	::selection { background-color: #E13300; color: white; }
-	::-moz-selection { background-color: #E13300; color: white; }
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-	body {
-		background-color: #fff;
-		margin: 40px;
-		font: 13px/20px normal Helvetica, Arial, sans-serif;
-		color: #4F5155;
-	}
+    <title>Berita RS Firmosa</title>
 
-	a {
-		color: #003399;
-		background-color: transparent;
-		font-weight: normal;
-	}
+    <!-- Bootstrap core CSS -->
+    <link href="<?php echo base_url() ?>assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-	h1 {
-		color: #444;
-		background-color: transparent;
-		border-bottom: 1px solid #D0D0D0;
-		font-size: 19px;
-		font-weight: normal;
-		margin: 0 0 14px 0;
-		padding: 14px 15px 10px 15px;
-	}
+    <!-- Custom styles for this template -->
+    <link href="<?php echo base_url() ?>assets/css/shop-item.css" rel="stylesheet">
 
-	code {
-		font-family: Consolas, Monaco, Courier New, Courier, monospace;
-		font-size: 12px;
-		background-color: #f9f9f9;
-		border: 1px solid #D0D0D0;
-		color: #002166;
-		display: block;
-		margin: 14px 0 14px 0;
-		padding: 12px 10px 12px 10px;
-	}
+  </head>
 
-	#body {
-		margin: 0 15px 0 15px;
-	}
+  <body>
 
-	p.footer {
-		text-align: right;
-		font-size: 11px;
-		border-top: 1px solid #D0D0D0;
-		line-height: 32px;
-		padding: 0 10px 0 10px;
-		margin: 20px 0 0 0;
-	}
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">RS Firmosa</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Profil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Berita</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Kontak</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-	#container {
-		margin: 10px;
-		border: 1px solid #D0D0D0;
-		box-shadow: 0 0 8px #D0D0D0;
-	}
-	</style>
-</head>
-<body>
+    <!-- Page Content -->
+    <div class="container">
 
-<div id="container">
-	<h1>Welcome to CodeIgniter!</h1>
+      <div class="row">
 
-	<div id="body">
-		<p>The page you are looking at is being generated dynamically by CodeIgniter.</p>
+        <div class="col-lg-3">
+          <h1 class="my-4">Halaman Berita</h1>
+          <div class="list-group">
+            <a href="#" class="list-group-item">Lihat Berita</a>
+            <a href="#" class="list-group-item active">Tambah Berita</a>
+            <a href="#" class="list-group-item">Sunting Berita</a>
+          </div>
+        </div>
+        <!-- /.col-lg-3 -->
 
-		<p>If you would like to edit this page you'll find it located at:</p>
-		<code>application/views/welcome_message.php</code>
+        <div class="col-lg-9">
 
-		<p>The corresponding controller for this page is found at:</p>
-		<code>application/controllers/Welcome.php</code>
+          <div class="card mt-4">
+            <div class="card-body">
+              <h3 class="card-title">Product Name</h3>
+              <h4>$24.99</h4>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente dicta fugit fugiat hic aliquam itaque facere, soluta. Totam id dolores, sint aperiam sequi pariatur praesentium animi perspiciatis molestias iure, ducimus!</p>
+              <span class="text-warning">&#9733; &#9733; &#9733; &#9733; &#9734;</span>
+              4.0 stars
+            </div>
+          </div>
+          <!-- /.card -->
 
-		<p>If you are exploring CodeIgniter for the very first time, you should start by reading the <a href="user_guide/">User Guide</a>.</p>
-	</div>
+          <div class="card card-outline-secondary my-4">
+            <div class="card-header">
+              Product Reviews
+            </div>
+            <div class="card-body">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis et enim aperiam inventore, similique necessitatibus neque non! Doloribus, modi sapiente laboriosam aperiam fugiat laborum. Sequi mollitia, necessitatibus quae sint natus.</p>
+              <small class="text-muted">Posted by Anonymous on 3/1/17</small>
+              <hr>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis et enim aperiam inventore, similique necessitatibus neque non! Doloribus, modi sapiente laboriosam aperiam fugiat laborum. Sequi mollitia, necessitatibus quae sint natus.</p>
+              <small class="text-muted">Posted by Anonymous on 3/1/17</small>
+              <hr>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis et enim aperiam inventore, similique necessitatibus neque non! Doloribus, modi sapiente laboriosam aperiam fugiat laborum. Sequi mollitia, necessitatibus quae sint natus.</p>
+              <small class="text-muted">Posted by Anonymous on 3/1/17</small>
+              <hr>
+              <a href="#" class="btn btn-success">Leave a Review</a>
+            </div>
+          </div>
+          <!-- /.card -->
 
-	<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds. <?php echo  (ENVIRONMENT === 'development') ?  'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : '' ?></p>
-</div>
+        </div>
+        <!-- /.col-lg-9 -->
 
-</body>
+      </div>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="<?php echo base_url() ?>assets/vendor/jquery/jquery.min.js"></script>
+    <script src="<?php echo base_url() ?>assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
 </html>
