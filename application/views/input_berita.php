@@ -109,7 +109,7 @@
         <div class="col-lg-3">
           <h1 class="my-4">Berita</h1>
           <div class="list-group">
-            <a href="#" class="list-group-item">Lihat Berita</a>
+            <a href="<?php echo site_url().'/lihat_berita'; ?>" class="list-group-item">Lihat Berita</a>
             <a href="#" class="list-group-item active">Tambah Berita</a>
             <a href="#" class="list-group-item">Sunting Berita</a>
           </div>
@@ -121,10 +121,12 @@
           <div class="card mt-4">
             <div class="card-body">
               <h3 class="card-title">Tambah Berita</h3>
-                <form class="" action="#" method="post">
+                <form action="<?php echo site_url().'/crud/input_berita'; ?>" method="post">
                   <br>
+                  <input type="text" readonly value="<?php echo $kodeunik; ?>" placeholder="Id Berita" name="id" class="txt">
+                  <input type="text" required placeholder="Masukan Nama Author" name="author" class="txt">
                   <input type="text" required placeholder="Masukan Judul Berita" name="judul" class="txt">
-                	<textarea placeholder="Masukan Isi Berita" name="isi" type="text" class="txt_3"></textarea>
+                	<textarea required placeholder="Masukan Isi Berita (Max. 1000 Karakter)" name="isi" type="text" class="txt_3"></textarea>
                   <input type="submit" value="submit" name="submit" class="txt2">
                 </form>
             </div>
